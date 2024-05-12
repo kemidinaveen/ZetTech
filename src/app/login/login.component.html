@@ -1,0 +1,41 @@
+<!-- <form [formGroup]="loginForm" >
+    <div>
+        <div>
+            <label>Email</label>
+            <input type="text" formControlName="email"  id="inputone">
+            <div class="error"
+                *ngIf="loginForm.get('email').errors && loginForm.get('email').touched && loginForm.get('email').dirty">
+                Name is required</div>
+        </div>
+        <div>
+            <label>Password</label>
+            <input type="text" formControlName="password">
+            <div class="error"
+                *ngIf="loginForm.get('password').errors && loginForm.get('password').touched && loginForm.get('email').dirty">
+                Password is required</div>
+        </div>
+        <div href="#" routerLink="/register"><u>Register</u></div>
+    </div> -->
+<!-- <button routerLink="/home">Submit</button> -->
+<!-- <button routerLink="/userdata">click for service data</button>
+    
+</form> 
+<button type="button" (click)="validateuserr()" >Submitt</button>         -->
+
+
+
+    <div>
+        <div>
+            <label>Email</label>
+            <input type="text"  id="inputone">
+         
+        <div>
+            <label>Password</label>
+            <input type="text" id="inputtwo">
+          <div id="error"></div>
+        <div href="#" routerLink="/register "><u>Register</u></div>
+    </div>
+   
+    <button routerLink="/userdata">click for service data</button>
+
+<button type="button" (click)="validateuser()">Submitt</button>

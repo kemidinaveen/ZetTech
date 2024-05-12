@@ -1,0 +1,48 @@
+<p>cart-items works!</p>
+<!-- drop down for customers -->
+<div class="">
+    <div>
+        <select>
+            <ng-container *ngFor="let item of constructordetails">
+                <option [value]="item?.id">{{item?.name}}</option>
+            </ng-container>
+        </select>
+    </div>
+    <div class="mt-1">
+        <select class="form-control">
+            <option value="1" selected>Main</option>
+            <option value="10" selected>Branch</option>
+            <option value="11" selected>Third branch</option>
+            <option value="12" selected>Hyd</option>
+            <option value="13" selected>bangalore</option>
+
+        </select>
+
+    </div>
+    <div class="mt-1 table m-1 p-3">
+        <div class="row table-bordered bg-info">
+            <div class="col-3">Item</div>
+            <div class="col-3">Qty</div>
+            <div class="col-3">Price</div>
+            <div class="col-3">Delete</div>
+
+        </div>
+        <ng-container *ngFor="let item of groceryItems">
+            <div><span>{{item.title}}</span></div>
+            <div class="row">
+                <div class="col-3">
+                    <!-- put the image here -->
+                </div>
+                <div class="col-3">1</div>
+                <div class="col-3">{{item.price}}</div>
+                <div class="col-3" style="font-weight:bold;cursor:pointer;color:red" click="deleteGroceryItem()">&#9747;
+                </div>
+            </div>
+        </ng-container>
+    </div>
+    <div>
+        <!-- cart item details -->
+
+    </div>
+</div>
+

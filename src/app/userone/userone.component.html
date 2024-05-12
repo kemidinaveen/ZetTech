@@ -1,0 +1,17 @@
+<p>userone works!</p>
+<!-- <app-address></app-address>
+<app-aboutuser></app-aboutuser> -->
+<!-- <button routerLink="/userone/address">Address</button> -->
+<button [routerLink]="['/userone',{
+    outlets:{
+        'onee':['one'],
+        'twoo':['two']
+    }
+}]">Navigate to userone</button>
+
+
+<div><router-outlet name="onee"></router-outlet>
+</div>
+<div>
+<router-outlet name="twoo"></router-outlet>
+</div>

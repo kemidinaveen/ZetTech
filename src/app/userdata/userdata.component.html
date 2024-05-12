@@ -1,0 +1,22 @@
+<p>userdata works!</p>
+
+<table class="table table-bordered">
+    <tr class="bg-primary">
+        <th>Id</th>
+        <th>Name</th>
+        <th>City</th>
+        <th>Salary</th>
+        <th>Dob</th>
+
+    </tr>
+<tr *ngFor="let user of users">
+    <td>{{user.Id}}</td>
+    <td>{{user.name}}</td>
+    <td>{{user.city}}</td>
+    <td>{{user.salary}}</td>
+    <td>{{user.dob}}</td>
+
+</tr>
+</table>
+<!-- <router-outlet name="one"></router-outlet> -->
+<!-- <router-outlet name="two"></router-outlet> -->
